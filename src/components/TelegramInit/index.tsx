@@ -3,14 +3,6 @@
 import { FC, PropsWithChildren, useEffect } from "react";
 import { init, retrieveLaunchParams } from "@telegram-apps/sdk";
 
-declare global {
-    interface Window {
-        Telegram?: {
-            WebApp: any;
-        };
-    }
-}
-
 const TelegramInit: FC<PropsWithChildren> = ({ children }) => {
     useEffect(() => {
         if (typeof window === 'undefined') {
