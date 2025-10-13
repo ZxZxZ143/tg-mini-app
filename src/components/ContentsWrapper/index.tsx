@@ -6,6 +6,7 @@ import TransferBlock from "@/components/TransferBlock";
 import TransferInfo from "@/components/TransferInfo";
 import {useUser} from "@/context/UserContext";
 import {useCurrency} from "@/context/CurrencyContext";
+import Navigation from "@/components/Navigation";
 
 const ContentWrapper = () => {
     const {isLoading} = useUser()
@@ -16,12 +17,16 @@ const ContentWrapper = () => {
             return <div className="absolute w-10 h-10 rounded-full border-3 border-border-spinner border-t-transparent animate-spin top-1/2 left-1/2 -translate-1/2"/>
         } else {
             return (
-                <div>
-                    <UserHeader/>
-                    <UserInfo/>
-                    <TransferBlock/>
-                    <TransferInfo/>
-                </div>
+                <>
+                    <div className="px-8 my-5">
+                        <UserHeader/>
+                        <UserInfo/>
+                        <TransferBlock/>
+                        <TransferInfo/>
+                    </div>
+                    <Navigation/>
+                </>
+
             )
         }
     }
