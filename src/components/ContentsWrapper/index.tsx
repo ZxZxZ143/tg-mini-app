@@ -6,7 +6,6 @@ import TransferBlock from "@/components/TransferBlock";
 import TransferInfo from "@/components/TransferInfo";
 import {useUser} from "@/context/UserContext";
 import {useCurrency} from "@/context/CurrencyContext";
-import Navigation from "@/components/Navigation";
 
 const ContentWrapper = () => {
     const {isLoading} = useUser()
@@ -22,7 +21,6 @@ const ContentWrapper = () => {
                     <UserInfo/>
                     <TransferBlock/>
                     <TransferInfo/>
-                    <Navigation />
                 </div>
             )
         }

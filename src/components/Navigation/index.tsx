@@ -1,3 +1,5 @@
+'use client'
+
 import {NavigationConfig} from "@/components/Navigation/config";
 import NavigationItem from "@/components/Navigation/NavigationItem";
 import {useState} from "react";
@@ -12,7 +14,7 @@ const Navigation = () => {
     console.log(active)
 
     return (
-        <div className="fixed bg-bg-navigation bottom-0 left-0 w-full py-5 px-12 flex justify-between items-center">
+        <div className="sticky bg-bg-navigation bottom-0 left-0 w-full py-5 px-12 flex justify-between items-center">
             {
                 NavigationConfig.map((item) => (
                     <NavigationItem key={item.id} isActive={active === item.id} Icon={item.Icon} onClick={() => setActiveHandler(item.id)} />
