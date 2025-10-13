@@ -1,26 +1,73 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --tg-theme-c-black: #2F2F33;
+  --tg-theme-c-white: #FFFFFF;
+  --tg-theme-c-white-50: rgba(255, 255, 255, 0.5);
+  --tg-theme-c-white-100: #F5F8FA;
+  --tg-theme-c-white-200: rgba(245, 248, 250, 0.2);
+  --tg-theme-c-white-300: rgba(255, 255, 255, 0.2);
+  --tg-theme-c-white-350: rgba(255, 255, 255, 0.1);
+  --tg-theme-c-grey: #AAB8C2;
+  --tg-theme-c-grey-100: #253341;
+  --tg-theme-c-grey-200: #434347;
+  --tg-theme-c-grey-300: #7474801F;
+  --tg-theme-c-blue: #1D9BF0;
+  --tg-theme-c-dark-blue: #15202B;
+  --tg-theme-hint-color: #8b949e;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-background: var(--tg-theme-c-black);
+  --color-foreground: var(--tg-theme-c-white-100);
+  --color-t-username: var(--tg-theme-c-white-100);
+  --color-t-rank: var(--tg-theme-c-grey);
+  --color-t-points: var(--tg-theme-c-white-100);
+  --color-t-points-border: var(--tg-theme-c-white);
+  --color-border-points: var(--tg-theme-c-white-200);
+  --color-b-primary: var(--tg-theme-c-blue);
+  --color-b-secondary: var(--tg-theme-c-white-300);
+  --color-t-description: var(--tg-theme-c-grey);
+  --color-border-transfer: var(--tg-theme-c-white-300);
+  --color-t-transfer: var(--tg-theme-c-grey);
+  --color-bg-progress: var(--tg-theme-c-grey-200);
+  --color-bg-progress-fill: var(--tg-theme-c-blue);
+  --color-t-progress-bar: var(--tg-theme-c-white);
+  --color-bg-buy-section: var(--tg-theme-c-grey-100);
+  --color-t-primary-buy-section: var(--tg-theme-c-white-100);
+  --color-t-secondary-buy-section: var(--tg-theme-c-grey);
+  --color-border-buy-section: var(--tg-theme-c-white-350);
+  --color-bg-active-nav-item: var(--tg-theme-c-white-100);
+  --color-bg-not-active-nav-item: var(--tg-theme-c-grey-300);
+  --color-t-not-active-nav-item: var(--tg-theme-c-white-100);
+  --color-t-active-nav-item: var(--tg-theme-c-grey-100);
+  --color-border-list-item: var(--tg-theme-c-grey-300);
+  --color-t-primary-list-item: var(--tg-theme-c-white-100);
+  --color-t-secondary-list-item: var(--tg-theme-c-grey);
+  --color-border-spinner: var(--tg-theme-c-white-100);
+  --color-bg-navigation: var(--tg-theme-c-dark-blue);
+  --color-icon-active-navigation: var(--tg-theme-c-white);
+  --color-icon-not-active-navigation: var(--tg-theme-c-white-50);
+  --color-input: var(--tg-theme-c-dark-blue);
+  --color-t-input: var(--tg-theme-c-grey);
+  --color-icon-input: var(--tg-theme-c-grey);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+
+  --radius-md: 10px;
+  --radis-lg: 12px;
+  --radius-xl: 14px;
+
+  --text-3xl: 24px;
+  --text-base: 16px;
+  --text-s: 14px;
+  --text-xs: 12px;
+  --text-xxs: 10px;
+  --font-sans: var(--font-geist-sans);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-background);
+  font-size: var(--text-base);
+  color: var(--color-foreground);
+  font-family: var(--font-geist-sans), serif;
 }
