@@ -11,8 +11,6 @@ const Navigation = () => {
         setActive(active);
     }
 
-    console.log(active)
-
     return (
         <div className="sticky bg-bg-navigation bottom-0 left-0 w-full py-5 px-12 flex justify-between items-center">
             {
