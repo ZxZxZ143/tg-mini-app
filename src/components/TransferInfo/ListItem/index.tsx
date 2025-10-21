@@ -11,7 +11,6 @@ interface ListProps {
 }
 
 const ListItem:FC<ListProps> = ({className, name, description, number, imgPath}) => {
-    console.log(imgPath)
     return (
         <div className={clsx("flex items-center justify-between p-3 border-1 border-border-list-item rounded-lg", className)}>
             <div className="flex items-center gap-3">
