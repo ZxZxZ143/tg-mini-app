@@ -12,6 +12,7 @@
   --tg-theme-c-grey-100: #253341;
   --tg-theme-c-grey-200: #434347;
   --tg-theme-c-grey-300: #7474801F;
+  --tg-theme-c-grey-400: #636363;
   --tg-theme-c-blue: #1D9BF0;
   --tg-theme-c-dark-blue: #15202B;
   --tg-theme-hint-color: #8b949e;
@@ -43,7 +44,7 @@
   --color-t-active-nav-item: var(--tg-theme-c-grey-100);
   --color-border-list-item: var(--tg-theme-c-grey-300);
   --color-t-primary-list-item: var(--tg-theme-c-white-100);
-  --color-t-secondary-list-item: var(--tg-theme-c-grey);
+  --color-t-secondary-list-item: var(--tg-theme-c-grey-400);
   --color-border-spinner: var(--tg-theme-c-white-100);
   --color-bg-navigation: var(--tg-theme-c-dark-blue);
   --color-icon-active-navigation: var(--tg-theme-c-white);
@@ -70,4 +71,13 @@ body {
   font-size: var(--text-base);
   color: var(--color-foreground);
   font-family: var(--font-geist-sans), serif;
+}
+
+.scrollbar-hidden {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }

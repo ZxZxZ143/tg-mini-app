@@ -16,12 +16,12 @@ const Button: FC<PropsWithChildren<ButtonProps>> = ({
                                                         children
                                                     }) => {
     const variants: Record<string, string> = {
-        'primary': 'bg-b-primary',
-        'secondary': 'bg-b-secondary'
+        'primary': 'bg-b-primary hover:bg-b-primary/70 active:bg-b-primary/70 pt-[11px] py-[12px]',
+        'secondary': 'bg-b-secondary hover:bg-b-secondary/70 active:bg-b-secondary/70 pt-2.5 pb-[11px]'
     }
     return (
         <button
-            className={clsx('py-2.5 flex justify-center items-center font-bold text-s rounded-xl ',
+            className={clsx('cursor-pointer transition outline-none leading-[120%] flex justify-center items-center font-bold text-s rounded-xl',
                 className,
                 variants[variant]
                 )}

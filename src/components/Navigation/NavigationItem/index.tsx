@@ -9,7 +9,7 @@ interface NavigationProps {
 }
 
 const NavigationItem: FC<NavigationProps> = ({onClick, Icon, isActive}) => {
-    const active = isActive ? '[&>path]:stroke-icon-active-navigation' : '[&>path]:stroke-icon-not-active-navigation'
+    const active = isActive ? '[&_*]:stroke-icon-active-navigation' : '[&_*]:stroke-icon-not-active-navigation'
 
     return (
         <button onClick={onClick} className="w-6 h-6">

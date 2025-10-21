@@ -20,7 +20,7 @@ export const ListItemConfig: Array<IListItem> = [
         id: 1,
         name: 'username',
         description: '10 TON',
-        imgPath: 'images/userList.jpg'
+        imgPath: '/images/userList.jpg'
     },
     {
         id: 2,

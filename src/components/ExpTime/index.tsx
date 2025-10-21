@@ -23,7 +23,7 @@ const ExpTime = () => {
                 value={currency}
                 onChange={handleChange}
                 defaultValue='TON'
-                className="bg-input py-4 pl-6 pr-3 rounded-md focus:outline-none"
+                className="appearance-none outline-0 bg-[url('/images/arrow-down.svg')] bg-no-repeat bg-[75%] bg-input py-4 pl-7 pr-11 rounded-md focus:outline-none"
             >
                 {
                     [
@@ -32,7 +32,7 @@ const ExpTime = () => {
                         {value: 'BTC', label: 'BTC'},
                         {value: 'ETH', label: 'ETH'},
                     ].map((item) => (
-                        <option key={item.value} value={item.value}>{
+                        <option key={item.value} value={item.value} className="bg-input text-t-input hover:bg-input transition rounded-md">{
                             item.label
                         }</option>
                     ))

@@ -14,7 +14,7 @@ const TransferInfo = () => {
 
     return (
         <div>
-            <div className="w-full flex gap-2 overflow-y-scroll scroll-smooth mt-5">
+            <div className="w-full flex gap-2 overflow-y-scroll scroll-smooth mt-5 scrollbar-hidden">
                 {
                     NavItemConfig.map((item) => (
                         <NavItem key={item.id} isActive={active === item.id} onClick={() => setActiveHandler(item.id)}>

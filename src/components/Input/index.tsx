@@ -1,7 +1,6 @@
 'use client'
 
 import {useState} from "react";
-import {Button, InputNumber} from "antd";
 import {MinusOutlined, PlusOutlined} from "@ant-design/icons";
 
 const Input = () => {
@@ -19,7 +18,7 @@ const Input = () => {
     };
 
     return (
-            <div className="bg-input rounded-md py-4 w-full px-16">
+            <div className="bg-input rounded-md py-4 w-full flex items-center justify-center">
                 <div className="flex items-center justify-between gap-0.5">
                     <button
                         onClick={handleDecrease}

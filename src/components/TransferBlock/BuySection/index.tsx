@@ -4,6 +4,7 @@ import Image from "next/image";
 import Button from "@/components/shared/Button";
 import {useCurrency} from "@/context/CurrencyContext";
 import Link from "next/link";
+import { numberFormatterWithK} from "@/utils/formatter";
 
 const BuySection = () => {
     const {currency} = useCurrency()
@@ -29,7 +30,7 @@ const BuySection = () => {
                 </Link>
             </div>
             <p className="pt-4 mt-4 border-t-1 border-t-border-buy-section text-xxs">
-                {`🔥 ${currency?.members} members & ${currency?.purchased} purchased`}
+                {`🔥 ${numberFormatterWithK.format(currency?.members || 0)} members & ${numberFormatterWithK.format(currency?.purchased || 0)} purchased`}
             </p>
         </div>
     );

@@ -1,6 +1,6 @@
 export interface IUser {
     username: string;
-    points: string;
+    points: number;
     description: string;
     currentValue: number;
     goal: number;
